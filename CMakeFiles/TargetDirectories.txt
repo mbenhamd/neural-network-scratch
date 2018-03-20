@@ -1,0 +1,3 @@
+/home/mbenhamd/Project/neural-network-scratch/CMakeFiles/rebuild_cache.dir
+/home/mbenhamd/Project/neural-network-scratch/CMakeFiles/edit_cache.dir
+/home/mbenhamd/Project/neural-network-scratch/CMakeFiles/neural_network_scratch.dir
