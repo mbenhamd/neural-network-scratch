@@ -20,12 +20,13 @@ Main::Main()
 {
  	TrainingData trainData("trainingData.txt");
 	//e.g., {3, 2, 1 }
-	vector<unsigned> topology;
-	topology.push_back(3);
+	vector<unsigned > topology;
 	topology.push_back(2);
+	topology.push_back(4);
 	topology.push_back(1);
 
 	trainData.getTopology(topology);
+
 	Net myNet(topology);
 
 	vector<double> inputVals, targetVals, resultVals;
@@ -33,7 +34,7 @@ Main::Main()
 	while(!trainData.isEof())
 	{
 		++trainingPass;
-		cout << endl << "Pass" << trainingPass;
+		cout << endl << "Pass " << trainingPass;
 
 		// Get new input data and feed it forward:
 		if(trainData.getNextInputs(inputVals) != topology[0])

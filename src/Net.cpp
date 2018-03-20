@@ -88,6 +88,7 @@ void Net::feedForward(const vector<double> &inputVals)
 Net::Net(const vector<unsigned> &topology)
 {
 	unsigned numLayers = topology.size();
+	cout << numLayers << endl;
 	for(unsigned layerNum = 0; layerNum < numLayers; ++layerNum){
 		m_layers.push_back(vector<Neuron>());
 		// numOutputs of layer[i] is the numInputs of layer[i+1]
@@ -98,7 +99,7 @@ Net::Net(const vector<unsigned> &topology)
 		// add a bias neuron to the layer:
 		for(unsigned neuronNum = 0; neuronNum <= topology[layerNum]; ++neuronNum){
 			m_layers.back().push_back(Neuron(numOutputs, neuronNum));
-			cout << "Mad a Neuron!" << endl;
+			cout << "Mad a Neuron! " << neuronNum << " " << endl;
 		}
 
 		// Force the bias node's output value to 1.0. It's the last neuron created above

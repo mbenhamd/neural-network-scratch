@@ -9,9 +9,10 @@ void TrainingData::getTopology(vector<unsigned> &topology)
 	getline(m_trainingDataFile, line);
 	stringstream ss(line);
 	ss >> label;
-	if(this->isEof() || label.compare("topology:") != 0)
+
+	if(this->isEof() || label.compare("topology:") == 0)
 	{
-		abort();
+			abort();
 	}
 
 	while(!ss.eof())
@@ -20,7 +21,6 @@ void TrainingData::getTopology(vector<unsigned> &topology)
 		ss >> n;
 		topology.push_back(n);
 	}
-	return;
 }
 
 TrainingData::TrainingData(const string filename)
