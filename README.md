@@ -5,8 +5,8 @@
 
 
 # Guide
-    git clone https://github.com/mbenhamd/neural-network-scratc
-    cd Neural-Network/src
+    git clone https://github.com/mbenhamd/neural-network-scratch
+    cd src/
     git submodule update --init
 
     # cd into one of the directories above and:
