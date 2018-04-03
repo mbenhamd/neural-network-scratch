@@ -1,4 +1,4 @@
-# Implémentation d'in réseau de neuronnes en C++
+# Implémentation d'un réseau de neuronnes en C++
 
 *From scratch*, les **matrices** ici sont utilisés avec une implémentation en template afin de pouvoir être utilisable pour n'importe quel type de données numériques en entrées.
 
