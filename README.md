@@ -14,6 +14,3 @@ Le C++ est utilisé ici car un des objectifs est de réaliser des benchmarks.
     sh compile.sh
     ./main
 
-# La classe réseau
-La fonction d'optimisation utilisée est la descente de gradient (GD).
-
